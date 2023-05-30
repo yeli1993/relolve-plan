@@ -1,10 +1,13 @@
 package com.yl.common.api;
 
+import lombok.Data;
+
 /**
  * @创建人 叶立
  * @创建时间 2023/5/30
  * @描述
  */
+@Data
 public class CommonResult<T> {
 
     /**
