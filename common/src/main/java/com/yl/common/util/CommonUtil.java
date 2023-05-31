@@ -1,6 +1,7 @@
 package com.yl.common.util;
 
 import org.apache.lucene.util.RamUsageEstimator;
+import org.slf4j.Logger;
 
 /**
  * @创建人 叶立
@@ -25,4 +26,5 @@ public class CommonUtil {
         return RamUsageEstimator.humanSizeOf(o);
 
     }
+
 }

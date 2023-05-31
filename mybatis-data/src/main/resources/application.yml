@@ -8,6 +8,13 @@ spring:
     password: root
   main:
     allow-circular-references: true
+#  mvc:
+#    pathmath:
+#      matching-strategy: ant_path_matcher
+
+  profiles:
+    #    active: release
+    active: dev
 
 mybatis:
   mapper-locations:
