@@ -1,6 +1,8 @@
 package com.yl.test.controller;
 
 import com.yl.common.service.RedisService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.lucene.util.RamUsageEstimator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +16,15 @@ import java.util.Map;
  * @描述
  */
 
+@Api(tags = "RedisController", description = "redis服务类",value = "redis服务类value")
 @RestController
 @RequestMapping(path = "/")
 public class RedisController {
     @Autowired
     private RedisService redisService;
 
+
+    @ApiOperation(value = "redis插入")
     @RequestMapping("/testRedisGet")
     public String testRedisGet() {
 
